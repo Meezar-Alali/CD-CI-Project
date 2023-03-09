@@ -1,6 +1,6 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+[![Python application test with Github Actions](https://github.com/Meezar-Alali/CD-CI-Project/actions/workflows/main.yml/badge.svg)](https://github.com/Meezar-Alali/CD-CI-Project/actions/workflows/main.yml)
 
 ## Project Plan
 <TODO: Project Plan
