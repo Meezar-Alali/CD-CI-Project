@@ -73,7 +73,7 @@ Build locally using 'make all' which will install all dependencies, perform lint
 a(.CD-CI-Project) meezar [ ~/CD-CI-Project ]$ make all
 ```
 
-![Build project](screen-shoot/make_all.PNG "Build project")
+![make_all](screen-shoot/make_all.PNG)
 
 
 ### Setting up CI using Github Actions
