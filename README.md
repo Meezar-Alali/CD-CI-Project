@@ -65,7 +65,7 @@ meezar [ ~/CD-CI-Project ]$ make setup
 meezar [ ~/CD-CI-Project ]$ source ~/.CD-CI-Project/bin/activate
 ```
 
-![Clone repo / Create virtual environment](Screen-shoot/clone.PNG "Clone repo / Create virtual environment")
+![Clone repo / Create virtual environment]([Screen-shoot/clone.PNG "Clone repo / Create virtual environment](https://github.com/Meezar-Alali/CD-CI-Project/blob/b0702854df4e519ddd9e5537835a218a5428cb41/Screen-shoot/clone.png)")
 
 
 Build locally using 'make all' which will install all dependencies, perform linting and testing:
