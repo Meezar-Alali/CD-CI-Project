@@ -73,7 +73,7 @@ Build locally using 'make all' which will install all dependencies, perform lint
 a(.CD-CI-Project) meezar [ ~/CD-CI-Project ]$ make all
 ```
 
-![make_all](screen-shoot/make_all.png "make all")
+![make_all](Screen-shoot/make_all.png "make all")
 
 
 ### Setting up CI using Github Actions
@@ -141,7 +141,7 @@ We have to enable Allow public pipeline in pipeline setting
 Configure the pipeline as a "Python to Linux Web App on Azure", select my subscription and the webapp name(meezar-cd-ci).
 then lick on 'Validate and configure'.
 
-![Created pipeline](Screenshoot/succes_run.png "Created pipeline")
+![Created pipeline](Screen-shoot/succes_run.png "Created pipeline")
 
 Notice 'Pipelines' now see a first successfull run of the pipeline including the 'Build stage' and the 'Deploy Web App' stage:
 
