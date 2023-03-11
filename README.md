@@ -27,7 +27,7 @@ A short [demo](#demo) .
 
 ## Project Plan
 
-The [Weekly plan](../../raw/main/projectplan/project-management.xlsx) 
+The [Weekly plan](Screen-shoot/project-management.xlsx) 
 
 
 
