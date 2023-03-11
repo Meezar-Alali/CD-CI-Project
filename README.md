@@ -36,7 +36,7 @@ The [Weekly plan](../../raw/main/projectplan/project-management.xlsx)
 
 The overall architecture of this project is as follows:
 
-![Architecture](Screen-shoot/Project_plan.png "Architecture")
+![Architecture1](Screen-shoot/Project_plan.png "Architecture1")
 
 The code resides in a GitHub repo together with test cases that can be used for quality assurance.
 
@@ -65,7 +65,7 @@ meezar [ ~/CD-CI-Project ]$ make setup
 meezar [ ~/CD-CI-Project ]$ source ~/.CD-CI-Project/bin/activate
 ```
 
-![Clone repo / Create virtual environment]([Screen-shoot/clone.PNG "Clone repo / Create virtual environment](https://github.com/Meezar-Alali/CD-CI-Project/blob/b0702854df4e519ddd9e5537835a218a5428cb41/Screen-shoot/clone.png)")
+![Clone repo / Create virtual environment](Screen-shoot/clone.png"Clone repo / Create virtual environment")
 
 
 Build locally using 'make all' which will install all dependencies, perform linting and testing:
@@ -73,7 +73,7 @@ Build locally using 'make all' which will install all dependencies, perform lint
 a(.CD-CI-Project) meezar [ ~/CD-CI-Project ]$ make all
 ```
 
-![make_all](screen-shoot/make_all.PNG)
+![make_all](screen-shoot/make_all.png)
 
 
 ### Setting up CI using Github Actions
@@ -82,7 +82,7 @@ a(.CD-CI-Project) meezar [ ~/CD-CI-Project ]$ make all
 Enable Github Actions by clicking on 'Actions', then click on "set up a workflow yourself' and use the GitHub Actions yaml file [.github/workflows/main.yml](.github/workflows/main.yml) as a template.
 
 Once the workflow is created it is automatically triggered and should show a passing build:
-![Passing build](Screen-shoot/passed.PNG "Passing build")
+![Passing build](Screen-shoot/passed.png "Passing build")
 
 
 ### Deploying to Azure App Services
@@ -93,7 +93,7 @@ Install the app to Azure app services using the free tier:
 
 Check if the app is up and running by opening the URL containing the webapp name provided in the previous step: https://meezar-cd-ci.azurewebsites.net/
 
-![Running webapp](Screen-shoot/webapp.PNG "Running webapp")
+![Running webapp](Screen-shoot/webapp.png "Running webapp")
 
 Edit file 'make_predict_azure_app.sh' and replace '< yourappname >' with my webapp name (e.g. meezar-cd-ci).
 
@@ -101,7 +101,7 @@ Test the remote webapp:
 ```bash
 (.CD-CI-Project) meezar [ ~/CD-CI-Project ]$ ./make_predict_azure_app.Unix.sh
 ```
-![Test remotely](Screen-shoot/predict.PNG "Test remotely")
+![Test remotely](Screen-shoot/predict.png "Test remotely")
 
 Logs of your running webapp can be accessed in two ways:
 
@@ -111,7 +111,7 @@ B. Via  cloud shell as a stream:
 ```bash
 (.CD-CI-Project) meezar [ ~/CD-CI-Project ]$ az webapp log tail
 ```
-![Streamed webapp logs](Screen-shoot/log_file.PNG "Streamed webapp logs")
+![Streamed webapp logs](Screen-shoot/log_file.png "Streamed webapp logs")
 
 Performance validation of the webapp can be performed via a load test using [locust](https://locust.io).
 Replace '< yourappname >' in the provided configuration and call locust:
@@ -120,7 +120,7 @@ Replace '< yourappname >' in the provided configuration and call locust:
 (.CD-CI-Project) meezar [ ~/CD-CI-Project ]$ locust -f locustfile.py --headless -u 15 -r 5 -t 20s
 ```
 Using the parameters above locust will use 15 users with a spawn rate of 5 users per second and run for 20 seconds:
-![Load test using locust](Screen-shoot/locust.PNG "Load test using locust")
+![Load test using locust](Screen-shoot/locust.png "Load test using locust")
 
 
 ### Setting up CI/CD using Azure Pipelines
@@ -129,19 +129,19 @@ Now sufficient to setup a pipeline.
 Open Azure devops in a browser https://dev.azure.com.
 
 Create a new project calle CD-CI-Project
-![Setting pipeline](Screen-shoot/create_project.PNG "Setting pipeline")
+![Setting pipeline](Screen-shoot/create_project.png "Setting pipeline")
 
 
 Then click on 'New pipeline'.
 
 When you are asked 'Where is your code?' select Github and choose your cloned repo.
 We have to enable Allow public pipeline in pipeline setting 
-![Setting pipeline](Screen-shoot/setting_pipeline.PNG "Setting pipeline")
+![Setting pipeline](Screen-shoot/setting_pipeline.png "Setting pipeline")
 
 Configure the pipeline as a "Python to Linux Web App on Azure", select my subscription and the webapp name(meezar-cd-ci).
 then lick on 'Validate and configure'.
 
-![Created pipeline](Screenshoot/succes_run.PNG "Created pipeline")
+![Created pipeline](Screenshoot/succes_run.png "Created pipeline")
 
 Notice 'Pipelines' now see a first successfull run of the pipeline including the 'Build stage' and the 'Deploy Web App' stage:
 
