@@ -55,18 +55,33 @@ As the following.
 Login to Azure and open the Azure cloud shell.
 
 Clone this project from github and change to the project directory:
+Creat ssh key
+```bash
+meezar [ ~ ]$ ssh -keygen -t -rsa
+```
+![Create ssh key](Screen-shoot/first_ssh.png"Create ssh key")
+
+Copy ssh key 
+```bash
+ameezar [ ~ ]$ cat /Home/meezar/.ssh/id_rsa.pub
+```
+![Copy ssh key](Screen-shoot/first_ssh.png"Copy ssh key")
+
+ste up ssh key on github repo and past the key we genrated
+![Repo ssh key](Screen-shoot/rep-ssh.png"Repo ssh key")
+
 ```bash
 meezar [ ~ ]$ git clone ttps://github.com/Meezar-Alali/CD-CI-Project.git
 ameezar [ ~ ]$ cd CD-CI-Project
 ```
-
+![Clone repo / git clone](Screen-shoot/clone.png"Clone repo / git clone")
 Create a virtual environment and source it:
 ```bash
 meezar [ ~/CD-CI-Project ]$ make setup
 meezar [ ~/CD-CI-Project ]$ source ~/.CD-CI-Project/bin/activate
 ```
 
-![Clone repo / Create virtual environment](Screen-shoot/clone.png"Clone repo / Create virtual environment")
+![virtual / Create virtual environment](Screen-shoot/clone_repo.png"virtual / Create virtual environment")
 
 
 Build locally using 'make all' which will install all dependencies, perform linting and testing:
@@ -76,14 +91,17 @@ a(.CD-CI-Project) meezar [ ~/CD-CI-Project ]$ make all
 
 ![make_all](Screen-shoot/make_all.png "make all")
 
+![make_pass](Screen-shoot/make_pass1 "make pass")
+
 
 ### Setting up CI using Github Actions
 
 
 Enable Github Actions by clicking on 'Actions', then click on "set up a workflow yourself' and use the GitHub Actions yaml file [.github/workflows/main.yml](.github/workflows/main.yml) as a template.
+![Passing build](Screen-shoot/passed.png "Passing build")
 
 Once the workflow is created it is automatically triggered and should show a passing build:
-![Passing build](Screen-shoot/passed.png "Passing build")
+![pass badge](Screen-shoot/make_sccess.png "Pass badge")
 
 
 ### Deploying to Azure App Services
