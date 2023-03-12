@@ -59,13 +59,13 @@ Creat ssh key
 ```bash
 meezar [ ~ ]$ ssh -keygen -t -rsa
 ```
-![Create ssh key](Screen-shoot/first_ssh.png"Create ssh key")
+![Create ssh key](Screen-shoot/first_ssh.png "Create ssh key")
 
 Copy ssh key 
 ```bash
 ameezar [ ~ ]$ cat /Home/meezar/.ssh/id_rsa.pub
 ```
-![Copy ssh key](Screen-shoot/first_ssh.png"Copy ssh key")
+![Copy ssh key](Screen-shoot/first_ssh.png "Copy ssh key")
 
 ste up ssh key on github repo and past the key we genrated
 ![Repo ssh key](Screen-shoot/rep-ssh.png "Repo ssh key")
