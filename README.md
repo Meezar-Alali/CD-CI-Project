@@ -168,6 +168,12 @@ Notice 'Pipelines' now see a first successfull run of the pipeline including the
 
 From now on every change to your code will trigger the CI/CD pipeline and update your webapp accordingly:
 
+## Future Enhancements
+
+- Branching strategy; Having multiple branches to support the development process and to have different states of the project, and a clean brach for releases to production.
+
+-  I need more feed back to devlope the web app depending on user experience 
+-  More  packages version improvment and to be update
 
 
 ## Demo
