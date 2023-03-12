@@ -1,6 +1,6 @@
 [![Python application test with Github Actions](https://github.com/Meezar-Alali/CD-CI-Project/actions/workflows/main.yml/badge.svg)](https://github.com/Meezar-Alali/CD-CI-Project/actions/workflows/main.yml)
 
-# Agile Development with Azure Project: Building a CI/CD Pipeline
+# Agile Development with Azure Project: Building a CI/CD Pipeline.
 
 ## Overview
 This project demonstrates the advantages of automating DevOps with CI/CD pipelines.
