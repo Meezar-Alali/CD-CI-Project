@@ -153,6 +153,6 @@ From now on every change to your code will trigger the CI/CD pipeline and update
 
 ## Demo
 
-A short demo demonstrates the main steps of the project:
+A short demo demonstrates the main steps of the project:[![Watch the video](https://youtu.be/iwEA3HBdUi0)])
 
 
