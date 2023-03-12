@@ -28,6 +28,7 @@ A short [demo](#demo) .
 ## Project Plan
 
 The [Weekly plan](Screen-shoot/project-management.xlsx) 
+The [Trello board](https://trello.com/b/WDKuHNEq/azure-cd-ci) For project tracking
 
 
 
