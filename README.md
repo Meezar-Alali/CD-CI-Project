@@ -68,20 +68,20 @@ ameezar [ ~ ]$ cat /Home/meezar/.ssh/id_rsa.pub
 ![Copy ssh key](Screen-shoot/first_ssh.png"Copy ssh key")
 
 ste up ssh key on github repo and past the key we genrated
-![Repo ssh key](Screen-shoot/rep-ssh.png"Repo ssh key")
+![Repo ssh key](Screen-shoot/rep-ssh.png "Repo ssh key")
 
 ```bash
 meezar [ ~ ]$ git clone ttps://github.com/Meezar-Alali/CD-CI-Project.git
 ameezar [ ~ ]$ cd CD-CI-Project
 ```
-![Clone repo / git clone](Screen-shoot/clone.png"Clone repo / git clone")
+![Clone repo / git clone](Screen-shoot/clone.png "Clone repo / git clone")
 Create a virtual environment and source it:
 ```bash
 meezar [ ~/CD-CI-Project ]$ make setup
 meezar [ ~/CD-CI-Project ]$ source ~/.CD-CI-Project/bin/activate
 ```
 
-![virtual / Create virtual environment](Screen-shoot/clone_repo.png"virtual / Create virtual environment")
+![virtual / Create virtual environment](Screen-shoot/clone_repo.png "virtual / Create virtual environment")
 
 
 Build locally using 'make all' which will install all dependencies, perform linting and testing:
@@ -91,7 +91,7 @@ a(.CD-CI-Project) meezar [ ~/CD-CI-Project ]$ make all
 
 ![make_all](Screen-shoot/make_all.png "make all")
 
-![make_pass](Screen-shoot/make_pass1 "make pass")
+![make_pass](Screen-shoot/make_pass1.png "make pass")
 
 
 ### Setting up CI using Github Actions
